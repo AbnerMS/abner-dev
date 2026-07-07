@@ -1,13 +1,20 @@
 import React from 'react';
+import minhaFoto from './assets/abner-foto.jpg'
+import { useEffect } from 'react';
 
 export default function App() {
+  // Modifica o título da aba da página
+  useEffect(() => {
+    document.title = "Abner Miranda | Dev Full-Stack";
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-300 selection:bg-cyan-500/30 font-sans">
       
       {/* --- NAVBAR --- */}
       <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="text-white font-bold text-xl tracking-tighter">DEV<span className="text-cyan-500">.PORTFOLIO</span></span>
+          <span className="text-white font-bold text-xl tracking-tighter">DEV<span className="text-cyan-500">.ABNERMIRANDA</span></span>
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <a href="#sobre" className="hover:text-cyan-400 transition-colors">Sobre</a>
             <a href="#projetos" className="hover:text-cyan-400 transition-colors">Projetos</a>
@@ -16,47 +23,70 @@ export default function App() {
         </div>
       </nav>
 
-      {/* --- HERO SECTION --- */}
+      {/* --- HERO SECTION WITH PROFILE IMAGE --- */}
       <header id="sobre" className="pt-32 pb-16 px-6">
-        <div className="max-w-5xl mx-auto">
-          {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-6">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            Disponível para novos projetos e freelas
-          </div>
+        <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+          
+          {/* Coluna do Texto (Esquerda no PC, Baixo no Mobile) */}
+          <div className="flex-1">
+            {/* Status Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-6">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Disponível para novos projetos e freelas
+            </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-            Engenheiro de Software & <br />
-            <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
-              Desenvolvedor Full-Stack
-            </span>
-          </h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+              Engenheiro de Software & <br />
+              <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+                Desenvolvedor Full-Stack
+              </span>
+            </h1>
 
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
-            Especializado em construir aplicações web escaláveis e performáticas. 
-            Transformo problemas complexos de negócios em soluções digitais elegantes, 
-            do banco de dados à interface do usuário.
-          </p>
+            <p className="text-base md:text-lg text-slate-400 mb-8 leading-relaxed">
+              Especializado em construir aplicações web escaláveis e performáticas. 
+              Transformo problemas complexos de negócios em soluções digitais elegantes, 
+              do banco de dados à interface do usuário.
+            </p>
 
-          <div className="flex flex-wrap gap-4">
-            <a href="#projetos" className="px-8 py-4 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-900/20 transition-all transform hover:-translate-y-1 text-center">
-              Ver Meus Projetos
-            </a>
-            <div className="flex items-center gap-3 px-2">
-              {/* GitHub SVG */}
-              <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            <div className="flex flex-wrap gap-4">
+              <a href="#projetos" className="px-6 py-3.5 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-900/20 transition-all transform hover:-translate-y-1 text-center text-sm">
+                Ver Meus Projetos
               </a>
-              {/* LinkedIn SVG */}
-              <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              </a>
-              {/* Mail SVG */}
-              <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-              </a>
+              <div className="flex items-center gap-3">
+                {/* GitHub */}
+                <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                </a>
+                {/* LinkedIn */}
+                <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                {/* Mail */}
+                <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                </a>
+              </div>
             </div>
           </div>
+
+          {/* Coluna da Foto (Direita no PC, Topo no Mobile) */}
+          <div className="w-48 h-48 md:w-64 md:h-64 relative flex-shrink-0">
+            {/* Efeito de brilho de fundo (Glow) */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-indigo-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+            
+            {/* Borda decorativa interna */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 p-1">
+              {/* Container da Imagem */}
+              <div className="w-full h-full bg-slate-950 rounded-full overflow-hidden">
+                <img 
+                  src={minhaFoto}
+                  alt="Sua Foto de Perfil" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </header>
 
