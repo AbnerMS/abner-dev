@@ -1,8 +1,8 @@
 # 🚀 Olá, eu sou Abner Miranda
 
-### 👨‍💻 Estudante de Engenharia de Sofware e Desenvolvedor Fullstack
+### 👨‍💻 Estudante de Engenharia de Sofware e Desenvolvedor Full-stack
 
-Sou apaixonado por tecnologia e focado em resolver problemas reais com tecnologia. Atualmente, estou focado em aprimorar minhas habilidades em **Python** e **AWS**.
+Sou apaixonado por tecnologia e focado em resolver problemas reais com tecnologia. Atualmente, estou focado em aprimorar minhas habilidades em **Python** e **Java**.
 
 ---
 
@@ -10,17 +10,16 @@ Sou apaixonado por tecnologia e focado em resolver problemas reais com tecnologi
 
 | Área | Tecnologias |
 | :--- | :--- |
-| **Linguagens** | JavaScript, Python, Java |
-| **Frontend** | HTML, CSS, React.js |
-| **Backend** | Node.js, Spring Boot, PostgreSQL |
-| **Ferramentas** | Docker, Git, AWS, Azure, GoogleCloud |
+| **Frontend** | React, Next.js, Tailwind CSS, JavaScript |
+| **Backend** | Python, Java, Spring Boot, PostgreSQL |
+| **Ferramentas** | Git, GitHub, Docker |
 
 ---
 
 ### 🏆 Projetos em Destaque
 
 * **Teia Cultural**: [Descrição]
-    * *Tech Stack:* Java, HTML, CSS, React.js, SQL.
+    * *Tech Stack:* Java, React.js, SQL.
     * [🔗 Ver Repositório](https://github.com/)
 * **Projeto Lydian**: [Descrição].
     * *Tech Stack:* Python, React,js, SQL.
@@ -40,3 +39,4 @@ Sou apaixonado por tecnologia e focado em resolver problemas reais com tecnologi
 * 💼 [LinkedIn](https://linkedin.com/in/seu-perfil)
 * 📧 [seu-email@email.com](mailto:seu-email@email.com)
 * 🌐 [Meu Portfólio/Site](https://seusite.com)
+
