@@ -54,15 +54,15 @@ export default function App() {
               </a>
               <div className="flex items-center gap-3">
                 {/* GitHub */}
-                <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
+                <a href="https://github.com/AbnerMS" target="_blank" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
                 </a>
                 {/* LinkedIn */}
-                <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
+                <a href="https://www.linkedin.com/in/abner-miranda-developer/" target="_blank" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
                 {/* Mail */}
-                <a href="#" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
+                <a href="mailto:abnermiranda02@gmail.com" className="p-3 bg-slate-900 hover:bg-slate-800 rounded-lg border border-slate-800 transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                 </a>
               </div>
@@ -89,6 +89,29 @@ export default function App() {
 
         </div>
       </header>
+
+      {/* --- DIVISOR AJUSTADO COM TRANSICÃO DE SEÇÃO --- */}
+      <div className="relative w-full bg-slate-950 py-0 flex items-center justify-center">
+        {/* A Linha Horizontal - Ajustada para ter a cor exata da borda do layout */}
+        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+          <div className="w-full border-t border-cyan-600"></div>
+        </div>
+
+        {/* O Ícone de Seta para Baixo Centralizado */}
+        <div className="absolute px-4 z-10">
+          <div className="flex items-center justify-center w-10 h-18 rounded-full border border-cyan-600 text-white bg-slate-950">
+            <svg 
+              className="w-5 h-5 animate-bounce" 
+              fill="none" 
+              viewBox="0 0 24 20" 
+              stroke="currentColor" 
+              strokeWidth="2"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </div>
 
       {/* --- SKILLS GRID --- */}
       <section className="py-20 px-6 bg-slate-900/30 border-y border-slate-900">
@@ -137,6 +160,29 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* --- DIVISOR AJUSTADO COM TRANSICÃO DE SEÇÃO --- */}
+      <div className="relative w-full bg-slate-950 py-0 flex items-center justify-center">
+        {/* A Linha Horizontal - Ajustada para ter a cor exata da borda do layout */}
+        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+          <div className="w-full border-t border-cyan-600"></div>
+        </div>
+
+        {/* O Ícone de Seta para Baixo Centralizado */}
+        <div className="absolute px-4 z-10">
+          <div className="flex items-center justify-center w-10 h-18 rounded-full border border-cyan-600 text-white bg-slate-950">
+            <svg 
+              className="w-5 h-5 animate-bounce" 
+              fill="none" 
+              viewBox="0 0 24 20" 
+              stroke="currentColor" 
+              strokeWidth="2"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </div>
 
       {/* --- SEÇÃO DE PROJETOS --- */}
       <section id="projetos" className="py-20 px-6">
@@ -190,10 +236,66 @@ export default function App() {
         </div>
       </section>
 
+      {/* --- SEÇÃO DE CONTATO --- */}
+      <section id="contato" className="py-20 px-6 bg-slate-900/20 border-t border-slate-900">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Vamos construir algo juntos?</h2>
+          <p className="text-slate-400 mb-8 max-w-md mx-auto">
+            Seja para uma oportunidade full-time, um projeto freelancer ou apenas para trocar uma ideia sobre código, sinta-se à vontade para mandar uma mensagem!
+          </p>
+
+          {/* Formulário */}
+          <form className="bg-slate-900 border border-slate-800 p-8 rounded-2xl text-left shadow-xl max-w-xl mx-auto">
+            <div className="grid grid-cols-1 gap-6">
+              <div>
+                <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Seu Nome</label>
+                <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Ex: João Silva" />
+              </div>
+              
+              <div>
+                <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Seu E-mail</label>
+                <input type="email" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Ex: joao@email.com" />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Mensagem</label>
+                <textarea rows="4" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none" placeholder="Escreva aqui sua proposta ou mensagem..."></textarea>
+              </div>
+
+              <button type="submit" className="w-full py-4 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-900/20 transition-all text-center text-sm cursor-pointer">
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
       {/* --- FOOTER --- */}
-      <footer className="border-t border-slate-900 py-8 text-center text-xs text-slate-600">
-        <p>&copy; {new Date().getFullYear()} - Desenvolvido com Tailwind CSS v4. Todos os direitos reservados.</p>
+      <footer className="border-t border-slate-900 py-8 text-center text-sm text-slate-400">
+        <p>Abner Miranda | &copy; Copyright {new Date().getFullYear()} | Todos os direitos reservados.</p>
       </footer>
+      
+      {/* --- BOTÃO FLUTUANTE DO WHATSAPP --- */}
+      <a 
+        href="https://wa.me/5581999652226" // Link para o número de WhatsApp
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-emerald-500 text-white rounded-full shadow-lg shadow-emerald-950/30 hover:bg-emerald-400 hover:scale-110 active:scale-95 transition-all duration-300 group"
+        aria-label="Falar no WhatsApp"
+      >
+        {/* Ícone do WhatsApp em SVG Puro */}
+        <svg 
+          className="w-7 h-7 fill-currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.451 5.42 1.452 5.4 0 9.794-4.402 9.797-9.817a9.77 9.77 0 0 0-2.87-6.932A9.73 9.73 0 0 0 12.008 1.91c-5.405 0-9.798 4.4-9.802 9.815a9.814 9.814 0 0 0 1.468 5.115l-.963 3.514 3.6-.944zM17.487 14.4c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+
+        {/* Efeito de Tooltip quando passa o mouse */}
+        <span className="absolute right-16 bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-lg border border-slate-800 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 whitespace-nowrap shadow-xl">
+          Fale comigo!
+        </span>
+      </a>
 
     </div>
   );
