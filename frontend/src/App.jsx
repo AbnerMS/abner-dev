@@ -1,6 +1,8 @@
 import React from 'react';
 import minhaFoto from './assets/abner-foto.jpg'
+import teiaCultural from './assets/teiaCultural.mp4'
 import { useEffect } from 'react';
+import SectionDivider from './components/SectionDivider';
 
 export default function App() {
   // Modifica o título da aba da página
@@ -95,28 +97,8 @@ export default function App() {
         </div>
       </header>
 
-      {/* --- DIVISOR AJUSTADO COM TRANSICÃO DE SEÇÃO --- */}
-      <div className="relative w-full bg-slate-950 py-0 flex items-center justify-center">
-        {/* A Linha Horizontal */}
-        <div className="absolute inset-0 flex items-center" aria-hidden="true">
-          <div className="w-full border-t border-cyan-600"></div>
-        </div>
-
-        {/* O Ícone de Seta para Baixo Centralizado */}
-        <div className="absolute px-4 z-10">
-          <div className="flex items-center justify-center w-10 h-18 rounded-full border border-cyan-600 text-white bg-slate-950">
-            <svg 
-              className="w-5 h-5 animate-bounce" 
-              fill="none" 
-              viewBox="0 0 24 20" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
-      </div>
+      {/* --- DIVISOR SEÇÃO (componente) --- */}
+      <SectionDivider />
 
       {/* --- SEÇÃO QUEM SOU EU --- */}
       <section id="sobre-mim" className="py-20 px-6 max-w-5xl mx-auto">
@@ -214,28 +196,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- DIVISOR AJUSTADO COM TRANSICÃO DE SEÇÃO --- */}
-      <div className="relative w-full bg-slate-950 py-0 flex items-center justify-center">
-        {/* A Linha Horizontal */}
-        <div className="absolute inset-0 flex items-center" aria-hidden="true">
-          <div className="w-full border-t border-cyan-600"></div>
-        </div>
-
-        {/* O Ícone de Seta para Baixo Centralizado */}
-        <div className="absolute px-4 z-10">
-          <div className="flex items-center justify-center w-10 h-18 rounded-full border border-cyan-600 text-white bg-slate-950">
-            <svg 
-              className="w-5 h-5 animate-bounce" 
-              fill="none" 
-              viewBox="0 0 24 20" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
-      </div>
+      {/* --- DIVISOR SEÇÃO (componente) --- */}
+      <SectionDivider />
 
       {/* --- SEÇÃO DE SERVIÇOS --- */}
       <section id="servicos" className="py-20 px-6 bg-slate-950 border-t border-slate-900/50">
@@ -295,44 +257,28 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- DIVISOR AJUSTADO COM TRANSICÃO DE SEÇÃO --- */}
-      <div className="relative w-full bg-slate-950 py-0 flex items-center justify-center">
-        {/* A Linha Horizontal - Ajustada para ter a cor exata da borda do layout */}
-        <div className="absolute inset-0 flex items-center" aria-hidden="true">
-          <div className="w-full border-t border-cyan-600"></div>
-        </div>
-
-        {/* O Ícone de Seta para Baixo Centralizado */}
-        <div className="absolute px-4 z-10">
-          <div className="flex items-center justify-center w-10 h-18 rounded-full border border-cyan-600 text-white bg-slate-950">
-            <svg 
-              className="w-5 h-5 animate-bounce" 
-              fill="none" 
-              viewBox="0 0 24 20" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
-      </div>
+      {/* --- DIVISOR SEÇÃO (componente) --- */}
+      <SectionDivider />
 
       {/* --- SEÇÃO DE PROJETOS --- */}
       <section id="projetos" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">Projetos em Destaque</h2>
-            <p className="text-slate-400">Uma seleção de sistemas que desenvolvi cobrindo o ecossistema Full-Stack.</p>
+            <h2 className="text-3xl font-bold text-white mb-2">Projeto em Destaque</h2>
+            <p className="text-slate-400">Uma seleção de sistema que desenvolvi cobrindo o ecossistema Full-Stack.</p>
           </div>
 
           {/* CARD DE PROJETO 1 */}
           <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:border-cyan-500/50 hover:shadow-cyan-500/10 flex flex-col md:flex-row mb-8">
             <div className="w-full md:w-2/5 h-48 md:h-auto bg-slate-800 relative">
-              <img 
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600" 
-                alt="Preview do Projeto" 
-                className="w-full h-full object-cover opacity-70 hover:opacity-100 transition-opacity"
+              <video
+                src={teiaCultural}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={false}
+                className="w-full h-full object-cover border-b border-slate-800/50"
               />
             </div>
 
@@ -340,16 +286,16 @@ export default function App() {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-semibold tracking-wider text-cyan-400 uppercase">Full-Stack</span>
-                  <span className="text-xs text-slate-400">Freela / Em produção</span>
+                  <span className="text-xs text-slate-400">Projeto Técnico / Em produção</span>
                 </div>
                 
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-2">E-Commerce API & Dashboard</h3>
-                <p className="text-slate-400 text-sm md:text-base mb-4 leading-relaxed">
-                  Plataforma completa com painel administrativo para controle de estoque, integração de pagamentos com Stripe e API RESTful robusta.
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Teia Cultural</h3>
+                <p className="text-slate-400 text-lg md:text-base mb-4 leading-relaxed">
+                  Um plataforma pensada para conectar profissionais da cultura com o seus clientes. Através de publicações, esses artistas podem divulgar seus trabalhos e alcançar novos clientes, fortalecendo e valorizando a cultura local.
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {['React', 'Tailwind', 'Node.js', 'PostgreSQL'].map(tech => (
+                  {['React', 'JavaScript', 'Java', 'SpringBoot', 'MySQL', 'Docker'].map(tech => (
                     <span key={tech} className="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">{tech}</span>
                   ))}
                 </div>
@@ -360,9 +306,6 @@ export default function App() {
                   Ver Deploy 
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
-                <a href="#" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
-                  Repositório GitHub
-                </a>
               </div>
             </div>
           </div>
@@ -370,28 +313,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- DIVISOR AJUSTADO COM TRANSICÃO DE SEÇÃO --- */}
-      <div className="relative w-full bg-slate-950 py-0 flex items-center justify-center">
-        {/* A Linha Horizontal */}
-        <div className="absolute inset-0 flex items-center" aria-hidden="true">
-          <div className="w-full border-t border-cyan-600"></div>
-        </div>
-
-        {/* O Ícone de Seta para Baixo Centralizado */}
-        <div className="absolute px-4 z-10">
-          <div className="flex items-center justify-center w-10 h-18 rounded-full border border-cyan-600 text-white bg-slate-950">
-            <svg 
-              className="w-5 h-5 animate-bounce" 
-              fill="none" 
-              viewBox="0 0 24 20" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
-      </div>
+      {/* --- DIVISOR SEÇÃO (componente) --- */}
+      <SectionDivider />
 
       {/* --- SEÇÃO DE CONTATO DIRETO --- */}
       <section id="contato" className="py-24 px-6 bg-slate-900/10 border-t border-slate-900">
@@ -413,7 +336,7 @@ export default function App() {
             
             {/* Cartão do WhatsApp */}
             <a 
-              href="https://wa.me/5581999652226" // Substitua pelo seu número real
+              href="https://wa.me/5581999652226?text=Ol%C3%A1%2C%20Abner!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." // Substitua pelo seu número real
               target="_blank" 
               rel="noopener noreferrer"
               className="flex flex-col items-center p-8 bg-slate-900/50 border border-slate-800 rounded-2xl transition-all duration-300 ease-out group shadow-xl hover:-translate-y-2 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/10 active:scale-98"
@@ -459,7 +382,7 @@ export default function App() {
       
       {/* --- BOTÃO FLUTUANTE DO WHATSAPP --- */}
       <a 
-        href="https://wa.me/5581999652226" // Link para o número de WhatsApp
+        href="https://wa.me/5581999652226?text=Ol%C3%A1%2C%20Abner!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." // Link para o número de WhatsApp
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-emerald-500 text-white rounded-full shadow-lg shadow-emerald-950/30 hover:bg-emerald-400 hover:scale-110 active:scale-95 transition-all duration-300 group"
