@@ -137,7 +137,7 @@ export default function App() {
                 Sou <b>Abner Miranda</b>, estudante de <b>Engenharia de Software</b>, e meu objetivo é criar soluções inovadoras que agreguem valor e façam a diferença na vida de pessoas através da tecnologia.
               </p>
               <p>
-                Acredito que tecnologia é um meio, não um fim. Por isso, meu diferencial é mergulhar no ecossistema do cliente para entender o que de fato trará retorno — seja construindo o design mais atrativo para seus clientes, ou automatizando tarefas repetitivas para você focar no seu negócio.
+                Acredito que tecnologia é um meio, não um fim. Por isso, meu diferencial é mergulhar no ecossistema do cliente para entender o que de fato trará retorno — seja construindo o design mais atrativo para seu site, ou automatizando tarefas repetitivas para você focar no seu negócio.
               </p>
               <p className="text-slate-300 font-medium">
                 Estou sempre estudando novas arquiteturas para otimizar processos, e explorando tendências de design para a melhor expriência do cliente.
@@ -236,7 +236,7 @@ export default function App() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">APIs & Arquitetura</h3>
               <p className="text-sm text-slate-400 leading-relaxed">
-                Construção de ecossistemas robustos no Back-end. Modelagem de bancos de dados relacionais e não-relacionais, integrações com gateways de pagamento e serviços de terceiros.
+                Construção de ecossistemas robustos no Back-end. Modelagem de bancos de dados, integrações com gateways de pagamento e serviços de terceiros.
               </p>
             </div>
 
@@ -249,7 +249,7 @@ export default function App() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Otimização & SEO</h3>
               <p className="text-sm text-slate-400 leading-relaxed">
-                Refatoração de códigos legados para ganho de velocidade. Ajustes finos de performance para atingir notas altas no Core Web Vitals, melhorando o ranqueamento orgânico no Google.
+                Refatoração de códigos legados para ganho de velocidade. Ajustes de performance para atingir notas altas no Core Web Vitals, melhorando o ranqueamento orgânico no Google.
               </p>
             </div>
 
